@@ -1,0 +1,88 @@
+---
+title: "Fees and Costs for Alloco ETP Products"
+sidebarTitle: "Fees"
+description: "Understand all fees associated with investing in Alloco ETP products — from management fees and creation costs to execution, gas, and custody charges."
+---
+
+Alloco ETP products carry several types of fees that arise at different points in the product lifecycle — from holding a position over time, to creating or redeeming units in the primary market, to executing trades and settling transactions on-chain. Understanding these costs helps you evaluate the total cost of ownership before you invest.
+
+## Fee types
+
+<AccordionGroup>
+  <Accordion title="Product management fee">
+    This fee is charged on an ongoing basis while you hold ETP units. It is typically calculated as a percentage of the product's net assets, though the exact method varies by product and is stated in the product documents.
+
+    The management fee covers management, infrastructure, issuance, reporting, and ongoing operations. It is accrued within the NAV calculation, which means it reduces NAV per token over time rather than appearing as a separate line item in your wallet.
+
+    Check the product page on [app.allocofi.com](https://app.allocofi.com) for the specific management fee rate that applies to each product.
+  </Accordion>
+  <Accordion title="Creation / redemption fee">
+    This fee applies when ETP units are created or redeemed through the primary market. It is charged as part of the subscription or redemption process and is separate from the management fee.
+
+    Primary market creation and redemption fees exist because executing large underlying trades, settling assets, and updating on-chain records carries real operational and transaction costs. The fee schedule for each product is published in the product documents.
+  </Accordion>
+  <Accordion title="Execution cost">
+    Execution costs arise whenever the product's underlying assets are traded — for example, during a rebalance, when processing a large creation or redemption, or when hedging exposure.
+
+    These costs include:
+    - Trading fees charged by DEXes or centralized exchanges
+    - Slippage on the underlying asset trades
+    - Broker commissions and exchange fees
+    - Gas fees for on-chain transactions executed by the product
+    - Hedging and rebalancing costs
+
+    Execution costs are typically reflected in the NAV at the time of the relevant transaction, which means they affect all holders proportionally through NAV dilution rather than as direct charges to individual users.
+  </Accordion>
+  <Accordion title="Market-making and routing cost">
+    When you trade ETP units through the RFQ system or via market makers, a spread or fee is embedded in the quote you receive. This is not a separately visible line item — it is reflected in the difference between the mid-price and the quote you execute against.
+
+    Costs in this category include:
+    - RFQ spread and market maker inventory cost
+    - Authorized participant (AP) fees
+    - Solver and order routing fees
+    - Liquidity aggregation spreads
+
+    These costs vary based on order size, market conditions, and the liquidity available at the time of execution.
+  </Accordion>
+  <Accordion title="Custody and administration cost">
+    Running a structured ETP product requires ongoing support from third-party service providers. These costs may be charged directly to the product and deducted from the asset pool, reducing the NAV over time.
+
+    Costs in this category include:
+    - Asset custody fees
+    - Fund administration and reconciliation
+    - Audit and legal costs
+    - Data source and oracle fees
+    - NAV calculation and reporting costs
+
+    The specific arrangements and cost allocation for each product are described in the product documents.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Where to find product-specific fees
+
+Each product publishes its own fee schedule as part of its product documents. You can find these in two places:
+
+- **Product page** on [app.allocofi.com](https://app.allocofi.com) — the product page includes a summary of applicable fees and links to the full documents.
+- **Product documents** — the prospectus, fee schedule, and NAV methodology for each product contain the authoritative fee terms. Always read these before subscribing or redeeming.
+
+Fee rates and structures can differ significantly between products, so you should review the documents specific to the product you are considering.
+
+---
+
+## Gas fees
+
+On-chain transactions require you to pay network gas fees, regardless of whether the transaction is an ETP swap, a creation request, or a redemption. These fees are paid directly to the blockchain network and are not collected by Alloco.
+
+Key points about gas:
+
+- Gas prices are set by the network and fluctuate based on on-chain congestion — Alloco does not control them.
+- You owe gas fees even if a transaction fails on-chain.
+- During periods of high network activity, gas costs can increase significantly and affect the economics of small trades.
+
+Check current network conditions before executing large or time-sensitive transactions.
+
+<Warning>
+  You are responsible for all third-party fees and network charges — including gas — even if a transaction fails, unless expressly stated otherwise in the product documents.
+</Warning>

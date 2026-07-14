@@ -1,0 +1,114 @@
+---
+title: "NAV Methodology for Alloco ETP Products"
+sidebarTitle: "NAV Methodology"
+description: "Detailed explanation of how Alloco calculates Official NAV, iNAV, and Risk NAV — including data inputs, update frequency, and the NAV state machine."
+---
+
+NAV (Net Asset Value) is the cornerstone of Alloco product pricing. This page explains the methodology used to calculate and publish NAV across all products — covering the three-layer NAV system, core formulas, data inputs, haircut models, and the NAV state machine that governs what actions are available under each condition.
+
+<Note>
+NAV is an important reference price but is not a guaranteed trading price. Secondary market prices may differ from NAV. Always check the iNAV and premium/discount display before trading.
+</Note>
+
+## Purpose and Scope
+
+This methodology explains the NAV calculation framework for ETP/ETF-style products on the Alloco platform. NAV is a core reference for issuance, redemption, secondary market anchoring, RFQ pricing, risk control, disclosure reporting, and exception handling.
+
+The methodology may apply to crypto-native products, TradFi-linked products, thematic baskets, quantitative strategy products, RWA exposures, and other structured products. Each product may define specific parameters based on underlying assets, market hours, custody structure, data availability, and legal requirements.
+
+## Three-Layer NAV System
+
+Alloco uses three complementary NAV types, each serving a distinct purpose in the product lifecycle:
+
+| NAV Type | Main Use | Update Frequency | Core Feature |
+|---|---|---|---|
+| Official NAV | Formal settlement, primary create/redeem, daily report, audit and investor reporting. | Usually daily or after the product settlement cycle. | Highest accuracy; based on full holdings, cash, fees, liabilities and corporate-action checks. |
+| iNAV | Secondary market price anchoring, RFQ quote reference and premium/discount monitoring. | May update every 15–60 seconds during active markets. | More real-time; depends on data feeds, order books, TWAP, position snapshots and cash estimates. |
+| Risk NAV | Risk control, suspension, quote protection, redemption limits and emergency mode. | Real-time or event-driven. | More conservative; includes stale price, liquidity, custody, counterparty and closed-market haircuts. |
+
+## Core Calculation Formula
+
+Total NAV and NAV per Token are generally calculated as follows:
+
+```
+Total NAV = asset market value + cash + receivables − liabilities − accrued fees − cost reserves − risk discounts
+
+NAV per Token = Total NAV / Total Token Supply
+```
+
+Asset value may include spot assets, equities, ETFs, derivatives, perpetual-contract margin, swap exposure, stablecoins, treasury bills, or cash. Liabilities may include pending redemptions, accrued fees, trading costs, financing costs, taxes, custody expenses, audit fees, or other product-level obligations.
+
+## Official NAV
+
+Official NAV is used for formal settlement and reporting. The calculation process may include:
+
+1. Locking the valuation time.
+2. Collecting prices, positions, cash, fees, liabilities, and corporate actions.
+3. Reconciling onchain supply and custody records.
+4. Calculating assets and liabilities and applying all adjustments.
+5. Generating a NAV report.
+6. Publishing summary fields or a report hash to the product page or onchain records.
+
+Official NAV delivers the highest accuracy and is usually produced daily or after the product settlement cycle. It is the reference price for primary create/redeem transactions and formal investor reports.
+
+## iNAV (Indicative NAV)
+
+iNAV is an intraday or active-market reference used for secondary market anchoring and RFQ quotes. It prioritizes tradability, explainability, and timely updates rather than audit-level completeness.
+
+iNAV may use bid/ask mid, 60-second TWAP, multi-exchange median price, broker quotes, or other reliable sources. It may update every 15–60 seconds during active markets and is the primary reference you see when monitoring premium/discount on secondary trades.
+
+## Risk NAV and Haircut Model
+
+Risk NAV is a conservative valuation used for risk control, suspension logic, quote protection, redemption limits, and emergency mode. It may be lower than iNAV or Official NAV. Its purpose is to protect you, the product asset pool, and system stability during uncertain states.
+
+### Risk NAV Haircut Model
+
+| Haircut Type | Trigger Condition | Example Range |
+|---|---|---|
+| Liquidity Haircut | Order book thin, AMM depth declines, or underlying liquidity deteriorates. | 0–100 bps or higher. |
+| Stale Price Haircut | Price update exceeds defined freshness threshold. | 10–100 bps. |
+| Closed-Market Haircut | Underlying market is closed, on holiday, or not executable. | Product-specific. |
+| Counterparty Haircut | Custodian, broker, CEX, or swap counterparty risk rises. | 10–100 bps. |
+| Event Haircut | Halt, major announcement, corporate action, onchain attack, or stablecoin depeg. | Case-by-case. |
+| FX / Settlement Haircut | Cross-currency, cross-market, or cross-time-zone settlement uncertainty. | 10–100 bps. |
+
+## NAV State Machine
+
+The NAV state machine governs which actions are available at any given time. Understanding the state helps you interpret platform messages and trading availability:
+
+| State | Meaning | Allowed Actions | Restrictions |
+|---|---|---|---|
+| Fresh | Data is current, price sources normal, and holdings reconciled. | Normal trading, RFQ, create/redeem. | Regular limits and fees. |
+| Stale | NAV or key price update is delayed. | Small trades and limited RFQ. | Restrict large create/redeem and widen spread. |
+| Frozen | Underlying market is closed or halted. Official NAV is used. | Small trades or view-only, depending on product. | Suspend large instant create/redeem. |
+| Degraded | Data-source conflict, lower-liquidity, or abnormal price condition. | Limited trading and limited redemption. | Increase haircut and suspend high-risk paths. |
+| Emergency | Oracle failure, custody event, extreme deviation, or major security event. | Usually view-only or redeem-only. | Suspend secondary trading, RFQ, and creation. |
+
+## Data Inputs and Price Sources
+
+| Data Type | Examples | Recommended Validation |
+|---|---|---|
+| Price data | Primary feed, secondary feed, TWAP, broker quote. | Multi-source deviation checks; if thresholds are exceeded, enter Degraded state. |
+| Position data | Onchain balance, CEX position, broker statement. | Compare with previous snapshot; abnormal changes require manual or multisig confirmation. |
+| Cash and payables | USDC, USD, pending trades, fees. | Onchain balance checks and reconciliation with bank/custodian/administrator reports. |
+| Corporate actions / events | Dividends, splits, halts, mergers, liquidations. | Match event calendars; restrict real-time create/redeem if processing is incomplete. |
+| Risk parameters | Haircut, status, confidence. | Generated by rules engine; material changes should be recorded with approval logs. |
+
+## NAV Pricing Across Flows
+
+| Scenario | Recommended Pricing Reference | Protection Logic |
+|---|---|---|
+| Small secondary buy/sell | DEX price versus iNAV. | Display premium/discount and slippage. |
+| Medium RFQ buy | iNAV + spread + execution cost. | Multiple quotes and best execution priority. |
+| Medium RFQ sell | iNAV − spread − execution cost. | Quote based on inventory, market state, and risk fees. |
+| Large create | Official NAV or execution-adjusted NAV. | Settle after underlying execution to avoid dilution of existing users. |
+| Large redeem | Official NAV after execution cost. | T+1/T+N or batch settlement to avoid run dynamics and stale NAV arbitrage. |
+| Exception state | Risk NAV or suspension. | Protect asset pool and long-term holders. |
+
+## Reporting, Governance and Limitations
+
+Important NAV updates should generate traceable reports containing: product name, ticker, valuation time, calculation version, Total NAV, NAV per Token, supply, cash, liabilities, fees, haircuts, holdings or summary exposure, data-source quality, NAV state, confidence, create/redeem availability, reportHash, signer, and approval records.
+
+Critical permissions may include NAV Publisher, Risk Admin, Data Admin, and Product Committee roles.
+
+NAV methodology cannot eliminate market, liquidity, counterparty, data, technology, or regulatory risk. NAV may be delayed, estimated, adjusted, or wrong. This document is a public disclosure explaining valuation and risk control arrangements — it is not investment advice, legal advice, tax advice, or a return commitment.

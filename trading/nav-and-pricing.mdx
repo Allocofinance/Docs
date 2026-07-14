@@ -1,0 +1,82 @@
+---
+title: "NAV and Pricing: How Alloco Values ETP Products"
+sidebarTitle: "NAV & Pricing"
+description: "Learn how Alloco calculates Official NAV, iNAV, and Risk NAV — and how these valuations affect trading, settlement, and redemption."
+---
+
+Alloco uses a three-layer NAV system to value ETP products accurately across different use cases. Each layer serves a distinct purpose — from formal settlement and audit reporting, to real-time secondary market pricing, to conservative risk control during uncertainty. Understanding how these layers interact helps you interpret prices, spot premiums and discounts, and anticipate how redemptions will be processed.
+
+## The three NAV types
+
+| NAV Type | Main Use | Update Frequency | Key Feature |
+|---|---|---|---|
+| Official NAV | Formal settlement, primary create/redeem, daily report | Usually daily | Highest accuracy; based on full holdings, fees, and liabilities |
+| iNAV | Secondary trading, RFQ reference, premium/discount monitoring | Every 15–60 seconds during active markets | More real-time; depends on live data feeds and price snapshots |
+| Risk NAV | Risk control, suspension, quote protection, emergency mode | Real-time / event-driven | Conservative; includes haircuts for illiquidity, stale prices, and counterparty risk |
+
+---
+
+## The NAV formula
+
+Alloco calculates NAV using the following formula:
+
+```
+Total NAV = asset market value + cash + receivables
+          − liabilities − accrued fees − cost reserves − risk discounts
+
+NAV per Token = Total NAV / Total Token Supply
+```
+
+Assets can include spot tokens, equities, ETFs, stablecoins, perpetual contract margin, and other holdings in the product basket. Liabilities include pending redemptions, accrued management fees, trading costs, financing costs, and other product-level obligations.
+
+---
+
+## Premium and discount
+
+The secondary market price of an ETP unit — the price you see on a DEX or in an RFQ quote — can differ from the NAV. When the market price is above the NAV, the product trades at a **premium**. When it is below, it trades at a **discount**.
+
+Alloco displays the current premium or discount relative to the latest iNAV in the product interface so you can see the spread before you trade. Large deviations tend to attract arbitrage activity from professional participants, which helps bring the market price back toward NAV over time — but this correction is not instant and is never guaranteed.
+
+You should review the iNAV and the premium/discount indicator before placing any secondary market order.
+
+---
+
+## NAV state machine
+
+Alloco's NAV engine operates across seven states that reflect data quality and market conditions. The state determines what trading actions are available and how pricing protections are applied.
+
+<AccordionGroup>
+  <Accordion title="Fresh — normal trading">
+    Data is current, price sources are healthy, and holdings are reconciled. Normal trading, RFQ, and create/redeem flows are all available. Standard limits and fees apply.
+  </Accordion>
+  <Accordion title="Stale — delayed NAV update">
+    The NAV or a key price feed has not updated within the expected window. Small trades and limited RFQ remain available, but large create/redeem orders are restricted and spreads may widen to protect against stale-price arbitrage.
+  </Accordion>
+  <Accordion title="Frozen — underlying market closed">
+    The underlying market is closed or halted. The Official NAV from the last valid calculation is used as the reference. Large instant create/redeem is suspended; some products may switch to view-only mode.
+  </Accordion>
+  <Accordion title="Degraded — data conflict or low liquidity">
+    A data-source conflict, liquidity deterioration, or abnormal price condition has been detected. Trading and redemptions are limited, haircuts increase, and high-risk execution paths are suspended.
+  </Accordion>
+  <Accordion title="Emergency — critical event">
+    An oracle failure, custody event, extreme price deviation, or major security event has occurred. The product typically enters view-only or redeem-only mode. Secondary trading, RFQ, and creation are suspended to protect the asset pool.
+  </Accordion>
+</AccordionGroup>
+
+The full state sequence runs: **Fresh → Stale → Frozen → Degraded → Emergency**. Transitions can move in either direction as conditions change — a product can recover from Stale back to Fresh once data feeds normalise.
+
+---
+
+## Pricing errors
+
+If a data failure, stale price feed, oracle outage, or manifest calculation error is identified, Alloco or the relevant product entity may:
+
+- Correct the NAV retroactively and republish an updated report
+- Cancel or reverse transactions that were executed at an incorrect price
+- Adjust settlement amounts to reflect the corrected valuation
+
+These corrections are applied to protect all participants in the product's asset pool. If a transaction you submitted is affected, you will be notified through the platform.
+
+<Note>
+  Alloco does not guarantee that the secondary market price will equal NAV. Always review the iNAV and the premium/discount indicator in the product interface before trading.
+</Note>

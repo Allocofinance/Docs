@@ -1,0 +1,116 @@
+---
+title: "ETP Product Structure: Modules and Components Explained"
+sidebarTitle: "Product Structure"
+description: "Understand the six modules that make up an Alloco ETP — from the Product Engine and NAV system to the Legal Wrapper and Disclosure Layer."
+---
+
+Every Alloco ETP is built from six core modules. Each module handles a distinct function — from defining the rules of your product to recording shares onchain and publishing disclosure documents. Understanding how these modules work together helps you structure your product idea effectively before you submit.
+
+## Platform modules
+
+<AccordionGroup>
+  <Accordion title="Product Engine" icon="gear">
+    The Product Engine is the rule set at the heart of your ETP. It defines:
+
+    - **Name and ticker** — how the product is identified on-platform and on-chain
+    - **Objective** — the investment thesis or strategy the product pursues
+    - **Eligible users** — who can subscribe, redeem, or hold the product
+    - **Fees** — management fee, creation/redemption fee, and any other costs
+    - **Minimum units** — the smallest amount a user can create or redeem
+    - **Risk limits** — maximum drawdown, concentration caps, or leverage limits
+    - **Rebalance rules** — when and how the portfolio is rebalanced
+    - **Subscription and redemption cycles** — settlement frequency and cut-off times
+    - **Suspension conditions** — triggers that pause trading or creation/redemption
+  </Accordion>
+
+  <Accordion title="Vault / Share Token" icon="vault">
+    The Vault and Share Token module records product ownership onchain. It:
+
+    - Maintains an accurate, real-time record of all product shares in circulation
+    - Tracks each user's subscription and redemption status
+    - Enforces mint and burn permissions so shares are only created or destroyed through authorized flows
+    - Acts as the canonical source of truth for the product's outstanding supply
+
+    The share token is an operational record and transfer rail. Its legal nature — including any ownership or economic rights it represents — is governed by the relevant product documents and applicable law.
+  </Accordion>
+
+  <Accordion title="NAV Engine" icon="calculator">
+    The NAV Engine computes the value of the product at any given time using a three-layer system:
+
+    | NAV Type | Purpose |
+    |---|---|
+    | **Official NAV** | Formal settlement, primary create/redeem, and daily reporting. Highest accuracy. |
+    | **iNAV** | Real-time secondary market anchoring and RFQ pricing. Updates every 15–60 seconds during active markets. |
+    | **Risk NAV** | Risk control, suspension logic, and quote protection. Applies haircuts for stale prices, low liquidity, or counterparty stress. |
+
+    The core formula is: **Total NAV = asset market value + cash + receivables − liabilities − accrued fees − cost reserves − risk discounts**
+  </Accordion>
+
+  <Accordion title="Liquidity Layer" icon="arrows-split-up-and-left">
+    The Liquidity Layer routes orders to the best available execution path based on order size and market conditions:
+
+    | Order Size | Route |
+    |---|---|
+    | Small orders | DEX / instant swap |
+    | Medium orders | RFQ / market maker quote |
+    | Large orders | Primary create / redeem at NAV |
+
+    Execution paths include DEX, RFQ desks, market makers (MM), authorized participants (AP), broker API, and direct primary market flows. The layer selects the appropriate route to minimize slippage and protect existing product holders.
+  </Accordion>
+
+  <Accordion title="Legal Wrapper" icon="scale-balanced">
+    The Legal Wrapper separates a product's assets and user economic rights from Alloco's operating-company assets and from other products on the platform.
+
+    Depending on the product type and jurisdiction, this may use:
+
+    - A **Special Purpose Vehicle (SPV)** for TradFi-linked or structured products
+    - A **Segregated Portfolio Company (SPC)** structure for multi-product isolation
+    - A **segregated portfolio or fund entity** for strategy or thematic products
+
+    The operating company provides technology, protocol, and service support. The SPV or asset pool holds underlying assets, cash, and associated rights on behalf of product holders.
+  </Accordion>
+
+  <Accordion title="Disclosure Layer" icon="file-lines">
+    The Disclosure Layer publishes all materials users need to evaluate and monitor the product. This includes:
+
+    - Terms of use and offering documents
+    - Fee schedule
+    - Risk disclosures
+    - NAV reports and methodology
+    - Holdings and strategy description
+    - Custody information and segregation structure
+    - Rebalance records and exception events
+    - Supporting resource files and report hashes
+
+    All disclosures are available on the product page. Material updates are published as they occur.
+  </Accordion>
+</AccordionGroup>
+
+## Defining your product
+
+When you propose a product, you will need to specify — or work with Alloco to define — the following:
+
+- **Eligible assets** — what the product can hold or reference
+- **Strategy rules** — how the portfolio is constructed, weighted, and managed
+- **Fees** — management fee, subscription/redemption fee, and any performance fees
+- **Valuation source** — which price feeds, oracles, or broker quotes are used for NAV
+- **Rebalancing process** — frequency, trigger conditions, and execution method
+- **Liquidity path** — how users will buy and sell (DEX, RFQ, primary market, or a combination)
+- **Redemption constraints** — settlement cycle, minimum redemption size, and any lock-up or notice period
+
+The more precisely you define these parameters in your submission, the faster Alloco can assess feasibility and move to the structuring phase.
+
+## Legal and compliance requirements
+
+Each product requires a set of disclosure documents before launch. Depending on product type, target investor, and jurisdiction, these typically include:
+
+- **Prospectus or offering memorandum** — the core product document covering structure and terms
+- **Risk disclosures** — material risks, assumptions, and product limitations
+- **NAV methodology document** — calculation logic, data inputs, and update frequency
+- **Custody overview** — safekeeping arrangements, asset segregation, and operational controls
+- **Fee schedule** — all costs associated with holding, subscribing to, or redeeming the product
+- **Eligibility requirements** — investor type, KYC/AML status, jurisdiction, and any whitelist criteria
+
+<Info>
+  The legal wrapper and disclosure requirements vary by product type, target investor, and jurisdiction. Alloco will guide you through the appropriate structure during the review process. You do not need to determine the right legal form on your own before submitting.
+</Info>

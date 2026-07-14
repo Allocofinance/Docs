@@ -1,0 +1,66 @@
+---
+title: "Liquidity Sources and Order Routing on Alloco"
+sidebarTitle: "Liquidity & Routes"
+description: "Understand how Alloco routes orders across DEX, RFQ, and primary market flows — and how liquidity is structured for different asset types."
+---
+
+Alloco connects you to multiple liquidity sources depending on the product type and the size of your order. Rather than relying on a single execution path, the platform routes orders across DEX pools, request-for-quote (RFQ) systems, and primary market creation and redemption flows — matching the right mechanism to your trade.
+
+## Liquidity tiers
+
+The route Alloco uses scales with your order size. Smaller orders prioritise speed; larger orders prioritise price accuracy and reduced market impact.
+
+| Order Size | Route | User Protection |
+|---|---|---|
+| Small | DEX / instant swap | Fast execution with visible slippage and premium/discount |
+| Medium | RFQ / MM quote | Multiple quotes may reduce slippage |
+| Large | Primary create/redeem | NAV or execution-adjusted NAV reduces AMM market impact |
+
+---
+
+## Crypto-native products
+
+Crypto-native ETPs are backed by spot positions, perpetual contracts, and onchain holdings. Liquidity for these products draws on:
+
+- **On-chain DEX pools** — automated market makers provide baseline liquidity for small and medium orders, with slippage and premium/discount visible before you confirm.
+- **Professional flow** — arb desks, market makers, and high-turnover participants actively trade around the NAV, which helps keep secondary market prices aligned with the underlying value.
+- **Weekly settlement and rebalance** — strategy products operate on a weekly settlement cycle. Rebalancing affects the composition of the underlying basket and can temporarily affect liquidity around settlement dates.
+
+---
+
+## TradFi-linked products
+
+ETPs that reference equities, ETFs, and other traditional assets use a different execution stack because those assets trade on regulated exchanges with fixed market hours.
+
+- **Underlying assets** — stocks, ETFs, and assets held via custody accounts.
+- **Execution path** — orders are routed through Broker/API connections using RFQ, offchain execution, and onchain access rails.
+- **Market hours** — creation, redemption, and NAV updates for TradFi-linked products are constrained by the hours of the relevant underlying exchanges. Outside those hours, pricing may be stale and large create/redeem flows may be paused.
+
+---
+
+## Market making and RFQ
+
+For medium-sized orders, the RFQ system lets market makers compete to fill your trade. Quotes are priced based on a combination of factors:
+
+- The current iNAV of the product
+- Execution cost and expected slippage on the underlying assets
+- The market maker's inventory position and hedging cost
+- Prevailing conditions in the underlying market
+- A risk spread reflecting uncertainty or illiquidity
+
+Multiple competing quotes give you better execution than a single AMM price, especially when DEX depth is thin. NAV-aware market making also helps prevent large trades from moving the on-chain price far from the product's fair value.
+
+---
+
+## Secondary market considerations
+
+When you buy or sell ETP units on the secondary market, you should keep the following in mind:
+
+- **Price may differ from NAV** — the market price reflects supply and demand on DEX pools and in RFQ systems, not the official NAV directly.
+- **Premium/discount monitoring** — Alloco displays the current premium or discount relative to iNAV in the product interface. Large deviations can attract arbitrage activity, which tends to bring the price back toward NAV over time.
+- **Liquidity is not guaranteed** — DEX depth, market maker inventory, and RFQ availability can all vary. During stress events, liquidity may deteriorate or disappear.
+- **Partial fills and slippage** — large secondary market orders may execute at worse prices than the quote shown, or may only be partially filled.
+
+<Info>
+  Weekly settlement and rebalancing cycles affect liquidity. Plan large transactions around the product's dealing calendar to avoid executing during rebalance windows when underlying assets are being traded and NAV calculations may be temporarily constrained.
+</Info>

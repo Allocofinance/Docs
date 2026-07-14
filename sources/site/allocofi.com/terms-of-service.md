@@ -1,0 +1,845 @@
+# Source: https://allocofi.com/terms-of-service
+
+These Terms of Service (these “Terms”) govern your access to and use of:
+
+- allocofi.com and its associated subdomains;
+- app.allocofi.com;
+- any Alloco-operated interface, application, dashboard, API, tool, feature, or service; and
+- any related Onchain ETP discovery, creation, structuring, issuance, subscription, minting, redemption, trading, NAV, compliance, and account functionality,
+
+collectively, the “Services.”
+
+The Services are provided by Alloco Limited and, where applicable, its affiliates (“Alloco,” “we,” “us,” or “our”).
+
+By accessing or using the Services, connecting a wallet, creating an account, submitting an application, or initiating a transaction, you agree to be bound by these Terms and our Privacy Policy.
+
+If you do not agree to these Terms, you must not use the Services.
+
+## 1\. Important Product Structure
+
+Alloco develops and operates infrastructure for the creation, issuance, administration, valuation, distribution, and trading of Onchain exchange-traded products and related financial products.
+
+Unless expressly stated otherwise in applicable product documentation:
+
+- Alloco is a technology, product-infrastructure, and service provider;
+- Alloco is not itself the issuer of every ETP Unit displayed through the Services;
+- a particular ETP may be issued by a separate company, fund, special-purpose vehicle, segregated portfolio, or other product entity;
+- underlying assets may be held through a separate broker, custodian, bank, fund, account, nominee, or legal arrangement; and
+- different entities may be responsible for issuance, portfolio management, custody, administration, NAV calculation, execution, market making, compliance, and redemption.
+
+The rights associated with a particular ETP Unit are determined by the legal documents for that product and not solely by information shown on the Alloco interface.
+
+## 2\. Product Documents Control
+
+Each ETP or other investment product may be subject to separate documents, which may include:
+
+- An offering memorandum;
+- prospectus;
+- private placement memorandum;
+- product supplement;
+- subscription agreement;
+- token terms;
+- constitutional documents;
+- risk disclosures;
+- NAV methodology;
+- custody description;
+- fee schedule;
+- redemption policy;
+- eligibility requirements; and
+- jurisdictional restrictions,
+
+collectively, the “Product Documents.”
+
+Before acquiring an ETP Unit, you are responsible for reviewing all applicable Product Documents.
+
+If these Terms conflict with Product Documents, the Product Documents will control with respect to the applicable product, investment, subscription, redemption, or ETP Unit.
+
+Information shown on the Services is a summary and may not contain every term, risk, restriction, fee, or legal consequence associated with a product.
+
+## 3\. Eligibility
+
+You may use the Services only if:
+
+- You are at least 18 years old;
+- you have legal capacity to enter into a binding agreement;
+- your use of the Services is lawful in your jurisdiction;
+- you are not subject to sanctions or asset-freeze restrictions;
+- you are not acting on behalf of a prohibited person;
+- you satisfy applicable KYC, AML, investor-classification, and product eligibility requirements; and
+- you are not otherwise prohibited from accessing the applicable Service or product.
+
+Certain products may be limited to:
+
+- Accredited investors;
+- professional investors;
+- qualified investors;
+- eligible counterparties;
+- institutional investors;
+- persons located in specified jurisdictions; or
+- persons who satisfy other financial, regulatory, or suitability criteria.
+
+Access to the general website does not mean that a particular ETP is offered or available to you.
+
+You must not attempt to circumvent a jurisdictional, investor-classification, sanctions, wallet, or access restriction, including through a virtual private network, proxy, false statement, nominee, or third party.
+
+## 4\. Restricted Persons and Jurisdictions
+
+You may not use the Services or transact in an ETP if doing so would violate:
+
+- Applicable sanctions;
+- securities laws;
+- financial-services laws;
+- anti-money laundering laws;
+- counter-terrorist financing laws;
+- tax laws;
+- export controls;
+- court orders; or
+- other applicable legal or regulatory restrictions.
+
+Alloco may use IP geolocation, identity verification, wallet screening, blockchain analytics, and other controls to restrict access.
+
+A person may be permitted to access informational portions of the Services while remaining ineligible to acquire or redeem an ETP Unit.
+
+Alloco may restrict products, features, networks, wallets, or jurisdictions at any time where reasonably necessary for legal, compliance, risk, security, or operational reasons.
+
+## 5\. Accounts and Authentication
+
+Certain Services may require you to create an account or authenticate through an email, wallet, passkey, embedded-wallet provider, or third-party authentication service.
+
+You agree to:
+
+- Provide accurate, current, and complete information;
+- promptly update material changes;
+- maintain the confidentiality of your credentials;
+- protect your devices and authentication methods;
+- notify us promptly of suspected unauthorized access; and
+- accept responsibility for activity conducted through your account, except to the extent caused directly by Alloco’s failure to comply with an applicable legal duty.
+
+You may not:
+
+- Create an account using another person’s identity without authorization;
+- transfer or sell an account;
+- conceal beneficial ownership;
+- provide false compliance information; or
+- use an account for unlawful third-party activity.
+
+## 6\. Digital Wallets
+
+You may be required to connect a self-custodial or embedded digital wallet.
+
+You are solely responsible for:
+
+- Selecting and maintaining your wallet;
+- protecting private keys, seed phrases, passwords, and devices;
+- confirming wallet addresses;
+- reviewing transaction details;
+- understanding wallet permissions and token approvals;
+- maintaining sufficient network tokens for gas fees; and
+- ensuring your wallet is compatible with the applicable blockchain and smart contracts.
+
+Alloco does not control self-custodial wallets and generally cannot:
+
+- Recover private keys;
+- reverse wallet transactions;
+- restore access to a lost wallet;
+- cancel a confirmed blockchain transaction; or
+- retrieve assets sent to an incorrect address or unsupported network.
+
+Never provide a private key or seed phrase to Alloco or any person claiming to represent Alloco.
+
+A wallet signature may constitute a legally binding instruction and may be irreversible once submitted to a blockchain.
+
+## 7\. Identity Verification and Compliance
+
+You agree to provide information and documentation reasonably requested for:
+
+- KYC or KYB verification;
+- beneficial ownership checks;
+- source-of-funds or source-of-wealth review;
+- sanctions screening;
+- tax compliance;
+- investor classification;
+- transaction monitoring;
+- fraud prevention; and
+- other legal or risk-management requirements.
+
+Alloco or its service providers may:
+
+- Verify information against public and private databases;
+- conduct wallet and blockchain screening;
+- request updated information;
+- delay a transaction while conducting a review;
+- impose transaction limits;
+- reject an application;
+- suspend access;
+- block or freeze activity where legally required; and
+- report information to a competent authority where required or permitted by law.
+
+Successful verification does not create a right to access any product.
+
+## 8\. No Investment, Legal, or Tax Advice
+
+The Services and all related content are provided for informational and product-access purposes.
+
+Unless expressly documented under a separate written agreement, Alloco does not provide:
+
+- Personalized investment advice;
+- fiduciary advice;
+- legal advice;
+- tax advice;
+- accounting advice;
+- suitability advice; or
+- a recommendation that any ETP, asset, portfolio, strategy, or transaction is appropriate for you.
+
+Product descriptions, themes, portfolio data, historical returns, risk labels, analytics, NAV information, charts, creator content, and educational materials do not constitute an offer, recommendation, solicitation, or guarantee.
+
+You are responsible for conducting your own investigation and obtaining independent professional advice.
+
+## 9\. Investment Decisions
+
+You are solely responsible for deciding whether to:
+
+- Subscribe for;
+- mint;
+- purchase;
+- hold;
+- transfer;
+- sell;
+- redeem; or
+
+otherwise interact with
+
+an ETP Unit or other asset.
+
+You should evaluate:
+
+- The Product Documents;
+- product structure;
+- underlying assets;
+- strategy;
+- manager;
+- legal rights;
+- fees;
+- liquidity;
+- custody;
+- valuation methodology;
+- tax treatment;
+- regulatory status;
+- blockchain risk; and
+- your own financial circumstances and risk tolerance.
+
+Past performance, simulated performance, back-tested results, target returns, indicative returns, and historical portfolio performance are not guarantees of future results.
+
+## 10\. ETP Units
+
+An ETP Unit may represent a contractual, beneficial, participation, tokenized, or other interest in a product entity or portfolio, as described in the Product Documents.
+
+Unless the Product Documents expressly state otherwise:
+
+- An ETP Unit is not a bank deposit;
+- an ETP Unit is not legal tender;
+- an ETP Unit is not guaranteed by Alloco;
+- an ETP Unit is not insured by a deposit insurance scheme;
+- holding an ETP Unit may not give you direct legal or beneficial ownership of each underlying asset;
+- token ownership alone may not provide voting, dividend, governance, or shareholder rights in an underlying company;
+- redemption may be subject to conditions, windows, fees, delays, gates, suspensions, or eligibility requirements; and
+- the market price may differ materially from NAV.
+
+The legal classification of an ETP Unit may vary by jurisdiction and may include classification as a security, fund interest, structured product, derivative, collective investment interest, digital asset, or another regulated instrument.
+
+## 11\. Subscription, Minting, and Purchase Requests
+
+A request to subscribe for, mint, or purchase an ETP Unit is not necessarily accepted when submitted.
+
+A transaction may involve some or all of the following steps:
+
+You submit an instruction through the Services.
+
+You transfer stablecoins, fiat currency, or another accepted asset.
+
+Funds are screened, reconciled, converted, transferred, or made available to a broker, custodian, issuer, or product account.
+
+The applicable portfolio assets are purchased or allocated.
+
+The transaction is confirmed.
+
+ETP Units become available for minting or claiming.
+
+You complete any required claim transaction.
+
+Completion times are estimates and are not guaranteed.
+
+A transaction may be delayed, rejected, partially completed, or cancelled because of:
+
+- Compliance review;
+- insufficient or late funding;
+- banking or stablecoin conversion delays;
+- blockchain congestion;
+- smart-contract failure;
+- broker or custodian processing;
+- market closure;
+- trading suspension;
+- asset unavailability;
+- price movement;
+- liquidity constraints;
+- execution limits;
+- system maintenance;
+- inaccurate information;
+- legal restrictions; or
+- force majeure.
+
+Where permitted by the applicable Product Documents, rejected or failed requests may result in a refund or claimable balance after deduction of applicable third-party costs, network fees, conversion costs, losses, or charges.
+
+## 12\. Redemption and Withdrawal Requests
+
+Redemption is governed by the applicable Product Documents and may be subject to:
+
+- Minimum amounts;
+- cut-off times;
+- dealing days;
+- notice periods;
+- settlement periods;
+- identity verification;
+- wallet screening;
+- fees;
+- liquidity availability;
+- asset-sale completion;
+- banking or stablecoin conversion;
+- redemption gates;
+- lock-ups;
+- suspension rights; and
+- applicable law.
+
+Submitting a redemption request does not guarantee immediate settlement at the NAV displayed when the request is submitted.
+
+The applicable redemption value may be determined at a later valuation point and may be affected by fees, spreads, buffers, execution prices, market movements, taxes, costs, or liabilities.
+
+You are responsible for completing any required claim or withdrawal transaction.
+
+## 13\. NAV, Indicative NAV, and Pricing
+
+The Services may display:
+
+- Official NAV;
+- indicative NAV or iNAV;
+- estimated portfolio value;
+- protected NAV;
+- market price;
+- reference price;
+- bid and ask price;
+- premium or discount;
+- portfolio holdings; and
+- estimated fees or transaction amounts.
+
+Indicative values are estimates and may differ from official NAV or final settlement values.
+
+NAV and pricing information may depend on:
+
+- Broker data;
+- custodian data;
+- exchange data;
+- oracle data;
+- fund administrator records;
+- foreign exchange rates;
+- stablecoin prices;
+- accrued fees;
+- liabilities;
+- market-close prices;
+- delayed or unavailable data; and
+- valuation assumptions.
+
+Where a protected NAV, pricing buffer, spread, or reserve is used, it is intended to manage execution, settlement, market, or operational risk. It does not guarantee a particular execution price or protect you from investment loss.
+
+A secondary-market price may trade above or below NAV. Alloco does not guarantee that arbitrage, market making, minting, or redemption will keep market price equal to NAV.
+
+In the event of a pricing error, data failure, stale price, oracle issue, manifest error, or calculation mistake, Alloco or the applicable product entity may correct, cancel, reprocess, or adjust a transaction to the extent permitted by applicable law and the Product Documents.
+
+## 14\. Fees and Costs
+
+You may be charged fees including:
+
+- Management fees;
+- administration fees;
+- subscription or minting fees;
+- redemption fees;
+- performance fees;
+- spreads;
+- execution costs;
+- brokerage fees;
+- custody fees;
+- banking fees;
+- stablecoin or foreign exchange conversion costs;
+- blockchain gas fees;
+- oracle or settlement costs;
+- subscription fees; and
+- other product or third-party expenses.
+
+Applicable fees will be described through the Services, Product Documents, or transaction interface.
+
+Fees may be deducted from:
+
+- The applicable portfolio;
+- NAV;
+- subscription proceeds;
+- redemption proceeds;
+- your connected wallet; or
+- another payment method.
+
+You are responsible for third-party fees and network charges even where a transaction fails, unless expressly stated otherwise.
+
+## 15\. Custody and Underlying Assets
+
+Underlying assets may be held with one or more:
+
+- Brokers;
+- custodians;
+- banks;
+- exchanges;
+- fund vehicles;
+- nominees;
+- sub-custodians;
+- smart contracts; or
+- other financial institutions.
+
+Alloco does not guarantee the solvency, security, availability, or performance of a third-party custodian, broker, bank, exchange, protocol, or counterparty.
+
+Assets associated with one segregated portfolio are intended to be maintained separately in accordance with the applicable legal structure and Product Documents. The effectiveness of segregation, bankruptcy remoteness, and creditor protection depends on applicable law, documentation, operational implementation, and judicial interpretation.
+
+## 16\. Secondary-Market Trading
+
+Where secondary-market functionality is available, an ETP Unit may be traded through:
+
+- A decentralized exchange;
+- request-for-quote system;
+- market maker;
+- liquidity provider;
+- centralized venue;
+- broker;
+- alternative trading system; or
+- another execution mechanism.
+
+Secondary-market liquidity is not guaranteed.
+
+You may experience:
+
+- Wide spreads;
+- slippage;
+- low liquidity;
+- price impact;
+- delayed execution;
+- partial execution;
+- failed transactions;
+- premiums or discounts to NAV;
+- market manipulation;
+- front-running;
+- maximal extractable value;
+- venue outages; or
+- trading suspension.
+
+Alloco may route or facilitate transactions through third parties but does not guarantee best execution unless expressly required under a separate written agreement or applicable law.
+
+## 17\. Blockchain and Smart-Contract Risks
+
+Blockchain transactions and smart contracts involve significant risks, including:
+
+- Software bugs;
+- coding errors;
+- exploits;
+- private-key compromise;
+- consensus failure;
+- validator failure;
+- bridge failure;
+- oracle failure;
+- network congestion;
+- chain reorganization;
+- blockchain forks;
+- governance attacks;
+- malicious tokens;
+- approval exploits;
+- wallet vulnerabilities;
+- irreversible transactions;
+- gas-price volatility;
+- airdrop or token-scam risks; and
+- changes to blockchain rules.
+
+Smart-contract audits, security reviews, insurance arrangements, or monitoring systems do not eliminate these risks.
+
+Alloco may modify, pause, migrate, replace, or discontinue a smart contract or supported blockchain where reasonably necessary for security, compliance, operational, or product reasons.
+
+## 18\. Stablecoin and Settlement Risks
+
+The Services may use stablecoins or other digital assets for funding and settlement.
+
+Stablecoins may:
+
+- Lose their intended peg;
+- become illiquid;
+- be frozen;
+- be blacklisted;
+- be subject to issuer action;
+- experience smart-contract failure;
+- become unavailable on a network;
+- face regulatory restrictions; or
+- become impaired by reserve, banking, custody, or counterparty events.
+
+Acceptance of a stablecoin does not constitute a representation that it will maintain its value or remain redeemable.
+
+## 19\. Third-Party Services
+
+The Services may integrate with or link to third-party:
+
+- Wallets;
+- blockchains;
+- protocols;
+- exchanges;
+- brokers;
+- custodians;
+- administrators;
+- banks;
+- payment providers;
+- data providers;
+- KYC providers;
+- analytics providers;
+- oracles;
+- liquidity providers; and
+- websites.
+
+Alloco does not control those third parties and is not responsible for their:
+
+- Terms;
+- privacy practices;
+- security;
+- availability;
+- accuracy;
+- solvency;
+- conduct; or
+- performance.
+
+Your use of a third-party service is governed by its own terms.
+
+## 20\. Creator and Manager Submissions
+
+If you submit an ETP idea, strategy, portfolio, methodology, brand, content, or other material, you represent that:
+
+- You have the right to submit it;
+- it does not infringe third-party rights;
+- it is not misleading;
+- all performance information is accurate and appropriately supported;
+- required permissions have been obtained; and
+- your submission complies with applicable law.
+
+Submitting an idea does not obligate Alloco to launch, review, finance, distribute, or maintain a product.
+
+Unless otherwise agreed in writing, Alloco may evaluate a submitted idea and may already be developing or evaluating similar concepts.
+
+Any commercial rights, fees, licenses, confidentiality obligations, product ownership, or revenue-sharing arrangements must be set out in a separate written agreement.
+
+## 21\. Intellectual Property
+
+The Services and their contents, including:
+
+- Software;
+- interfaces;
+- designs;
+- text;
+- graphics;
+- logos;
+- trademarks;
+- data compilations;
+- product frameworks;
+- NAV systems;
+- documentation;
+- models;
+- workflows; and
+- underlying technology,
+- are owned by or licensed to Alloco and are protected by applicable intellectual property laws.
+
+Subject to these Terms, Alloco grants you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to access and use the Services for their intended lawful purpose.
+
+You may not:
+
+- Copy or reproduce the Services;
+- reverse engineer or decompile software;
+- scrape or extract data at scale;
+- bypass access controls;
+- use Alloco trademarks without permission;
+- create a confusingly similar service;
+- resell access;
+- use the Services to train a competing model or product without permission; or
+- remove proprietary notices.
+
+## 22\. Feedback
+
+If you provide feedback, ideas, suggestions, or recommendations about the Services, you grant Alloco a worldwide, perpetual, irrevocable, transferable, sublicensable, royalty-free right to use that feedback without restriction or compensation.
+
+This provision does not transfer ownership of confidential investment strategies or creator intellectual property that is governed by a separate written agreement.
+
+## 23\. Prohibited Conduct
+
+You must not:
+
+- Violate applicable law;
+- engage in fraud, money laundering, sanctions evasion, or terrorist financing;
+- manipulate a market, price, NAV, oracle, or transaction;
+- impersonate another person;
+- provide false information;
+- conceal beneficial ownership;
+- use stolen funds or compromised wallets;
+- interfere with the Services;
+- introduce malware;
+- exploit a vulnerability;
+- conduct unauthorized testing;
+- bypass access controls;
+- overload infrastructure;
+- use automated tools in a manner that harms the Services;
+- engage in abusive trading;
+- misuse confidential information;
+- infringe intellectual property rights;
+- facilitate unlawful third-party activity; or
+- attempt, assist, or encourage any prohibited conduct.
+
+Alloco may investigate suspected violations and cooperate with competent authorities.
+
+## 24\. Suspension, Restrictions, and Termination
+
+Alloco may suspend, restrict, or terminate your access where reasonably necessary because of:
+
+- Suspected violation of these Terms;
+- legal or regulatory requirements;
+- sanctions or wallet-screening results;
+- fraud or security risk;
+- inaccurate information;
+- third-party service failure;
+- product suspension;
+- market disruption;
+- smart-contract risk;
+- unpaid fees;
+- investigation;
+- maintenance;
+- insolvency or counterparty concerns; or
+- discontinuation of a Service.
+
+Where reasonably practicable and legally permitted, Alloco may provide notice.
+
+Suspension of the interface does not necessarily prevent you from interacting directly with a public smart contract. Any direct interaction remains at your own risk and may remain subject to these Terms and the Product Documents.
+
+Termination does not affect accrued rights, existing liabilities, transaction records, or provisions intended to survive termination.
+
+## 25\. Taxes
+
+You are solely responsible for:
+
+- Determining the tax treatment of your activity;
+- reporting transactions;
+- paying taxes;
+- maintaining records; and
+- obtaining tax advice.
+
+Alloco may collect tax information, withhold amounts, or report information where required by law.
+
+Tax treatment may differ depending on your jurisdiction, legal status, product structure, holding period, transaction type, and use of a wallet or intermediary.
+
+## 26\. Electronic Communications and Signatures
+
+You consent to receiving agreements, disclosures, notices, transaction confirmations, statements, and other communications electronically.
+
+Electronic acceptance, wallet signatures, checkbox acceptance, account authentication, and blockchain signatures may have the same legal effect as a handwritten signature to the extent permitted by law.
+
+You are responsible for maintaining a valid email address and reviewing communications made available through the Services.
+
+## 27\. Service Changes
+
+Alloco may add, modify, suspend, or discontinue any part of the Services.
+
+This may include changes to:
+
+- Supported products;
+- jurisdictions;
+- networks;
+- wallets;
+- providers;
+- features;
+- interfaces;
+- transaction procedures;
+- fees;
+- pricing methodologies;
+- smart contracts; or
+- eligibility requirements.
+
+Alloco does not guarantee that any Service, product, interface, blockchain, or feature will remain available indefinitely.
+
+## 28\. Disclaimers
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS.
+
+ALLOCO DISCLAIMS ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES, INCLUDING WARRANTIES OF:
+
+- MERCHANTABILITY;
+- FITNESS FOR A PARTICULAR PURPOSE;
+- TITLE;
+- NON-INFRINGEMENT;
+- ACCURACY;
+- AVAILABILITY;
+- SECURITY;
+- QUIET ENJOYMENT; AND
+- FITNESS FOR INVESTMENT OR REGULATORY PURPOSES.
+
+ALLOCO DOES NOT WARRANT THAT:
+
+- THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE;
+- INFORMATION WILL BE COMPLETE, CURRENT, OR ACCURATE;
+- A TRANSACTION WILL BE ACCEPTED OR COMPLETED;
+- AN ETP WILL MAINTAIN ITS VALUE;
+- MARKET PRICE WILL EQUAL NAV;
+- LIQUIDITY WILL BE AVAILABLE;
+- A SMART CONTRACT WILL BE SECURE;
+- AN UNDERLYING ASSET WILL BE AVAILABLE;
+- A THIRD PARTY WILL PERFORM ITS OBLIGATIONS; OR
+- YOU WILL ACHIEVE ANY RETURN.
+
+Nothing in these Terms excludes a warranty or duty that cannot lawfully be excluded.
+
+## 29\. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALLOCO AND ITS AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, CONTRACTORS, AGENTS, AND SERVICE PROVIDERS WILL NOT BE LIABLE FOR:
+
+- INDIRECT;
+- INCIDENTAL;
+- SPECIAL;
+- EXEMPLARY;
+- PUNITIVE; OR
+
+CONSEQUENTIAL
+
+LOSS OR DAMAGE, INCLUDING LOSS OF:
+
+- PROFITS;
+- REVENUE;
+- BUSINESS;
+- OPPORTUNITY;
+- DATA;
+- GOODWILL;
+- DIGITAL ASSETS;
+- INVESTMENT VALUE; OR
+- ANTICIPATED SAVINGS.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALLOCO WILL NOT BE LIABLE FOR LOSS ARISING FROM:
+
+- MARKET MOVEMENTS;
+- INVESTMENT PERFORMANCE;
+- LIQUIDITY;
+- PRICE DIFFERENCES;
+- BLOCKCHAIN EVENTS;
+- SMART-CONTRACT FAILURE;
+- WALLET COMPROMISE;
+- USER ERROR;
+- THIRD-PARTY FAILURE;
+- BANKING OR BROKERAGE DELAY;
+- CUSTODY EVENTS;
+- STABLECOIN DEPEGGING;
+- SANCTIONS ACTION;
+- GOVERNMENT ACTION;
+- NETWORK CONGESTION;
+- ORACLE FAILURE;
+- FORCE MAJEURE; OR
+- UNAUTHORIZED ACCESS NOT CAUSED BY ALLOCO’S BREACH OF AN APPLICABLE LEGAL DUTY.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, ALLOCO’S AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THE SERVICES OR THESE TERMS WILL NOT EXCEED THE GREATER OF:
+
+- THE FEES PAID DIRECTLY BY YOU TO ALLOCO FOR THE APPLICABLE SERVICE DURING THE SIX MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM; OR
+- USD 1,000.
+
+This limitation does not apply to liability that cannot lawfully be limited, including liability for fraud or any other liability that applicable law expressly prohibits from being excluded.
+
+## 30\. Indemnification
+
+To the maximum extent permitted by law, you agree to indemnify and hold harmless Alloco and its affiliates, directors, officers, employees, agents, and service providers from claims, liabilities, damages, losses, costs, and expenses, including reasonable legal fees, arising from:
+
+- Your breach of these Terms;
+- your violation of applicable law;
+- your misuse of the Services;
+- information or content you submit;
+- your infringement of third-party rights;
+- activity conducted through your account or wallet; or
+- your fraud, misconduct, or negligence.
+
+This obligation does not apply to the extent a claim results directly from Alloco’s fraud, wilful misconduct, or liability that cannot lawfully be excluded.
+
+## 31\. Force Majeure
+
+Alloco will not be responsible for delay or failure caused by events beyond its reasonable control, including:
+
+- Natural disasters;
+- war;
+- terrorism;
+- civil unrest;
+- epidemic;
+- government action;
+- sanctions;
+- changes in law;
+- power failure;
+- internet failure;
+- cyberattack;
+- blockchain failure;
+- exchange closure;
+- banking disruption;
+- custodian failure;
+- market suspension;
+- labor dispute; or
+- failure of a critical service provider.
+
+## 32\. Changes to These Terms
+
+We may update these Terms to reflect changes in:
+
+- The Services;
+- product structures;
+- applicable law;
+- technology;
+- risk;
+- service providers; or
+- business practices.
+
+Updated Terms become effective when posted unless a later date is specified.
+
+Where required by law, we will provide additional notice.
+
+Your continued use of the Services after the effective date constitutes acceptance of the updated Terms.
+
+A material change to Product Documents will be handled in accordance with those Product Documents and applicable law.
+
+## 33\. Assignment
+
+You may not assign or transfer your rights or obligations under these Terms without Alloco’s prior written consent.
+
+Alloco may assign or transfer these Terms in connection with an affiliate reorganization, financing, merger, acquisition, sale of assets, or transfer of the Services, subject to applicable law.
+
+## 34\. Severability
+
+If any provision of these Terms is held invalid, illegal, or unenforceable, the remaining provisions will remain in effect.
+
+The invalid provision will be interpreted or modified to the minimum extent necessary to make it enforceable while preserving its intended purpose.
+
+## 35\. No Waiver
+
+Failure to enforce a provision does not waive the right to enforce it later.
+
+A waiver is effective only if made in writing by an authorized representative.
+
+## 36\. Entire Agreement
+
+These Terms, the Privacy Policy, applicable Product Documents, and any separate written agreement between you and Alloco constitute the entire agreement relating to the applicable subject matter.
+
+They supersede prior or contemporaneous communications concerning that subject matter.
+
+## 37\. Governing Law and Dispute Resolution
+
+These Terms are governed by the laws of THE REPUBLIC OF THE MARSHALL ISLANDS, without regard to conflict-of-law principles.
+
+Any dispute arising out of or relating to these Terms or the Services will be resolved by:
+
+- THE REPUBLIC OF THE MARSHALL ISLANDS.
+
+Nothing in this section prevents Alloco from seeking urgent injunctive or protective relief in a court of competent jurisdiction.
+
+Product Documents may establish a different governing law, forum, or dispute-resolution process for a particular ETP. In that case, the Product Documents will control with respect to that product.
