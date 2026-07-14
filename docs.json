@@ -27,7 +27,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
+              "welcome",
               "how-it-works",
               "eligibility"
             ]
