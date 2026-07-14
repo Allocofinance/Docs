@@ -78,9 +78,9 @@
           {
             "group": "Get Started",
             "pages": [
-              "welcome",
-              "eligibility",
               "index",
+              "eligibility",
+              "",
               "domain"
             ]
           },
