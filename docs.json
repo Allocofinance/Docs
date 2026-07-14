@@ -80,6 +80,49 @@
             "pages": [
               "index",
               "eligibility",
+              "domain"
+            ]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "products/overview",
+              "products/kol-etp",
+              "products/hedge-fund-etp",
+              "products/themes-etp"
+            ]
+          },
+          {
+            "group": "Create",
+            "pages": [
+              "create/product-structure",
+              "create/submission"
+            ]
+          },
+          {
+            "group": "Trading",
+            "pages": [
+              "trading/buying-and-selling",
+              "trading/fees",
+              "trading/liquidity-and-routes",
+              "trading/nav-and-pricing"
+            ]
+          },
+          {
+            "group": "Disclosures",
+            "pages": [
+              "disclosures/custody-overview",
+              "disclosures/nav-methodology",
+              "disclosures/risk-disclosures",
+              "disclosures/privacy-policy",
+              "disclosures/terms-of-service"
+            ]
+          },
+          {
+            "group": "Get Started",
+            "pages": [
+              "index",
+              "eligibility",
               "",
               "domain"
             ]
