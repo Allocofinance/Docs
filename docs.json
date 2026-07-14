@@ -83,6 +83,6 @@
     }
   },
   "interaction": {
-    "drilldown": true
+    "drilldown": false
   }
 }
