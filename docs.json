@@ -39,13 +39,8 @@
               "products/kol-etp",
               "products/hedge-fund-etp",
               "products/themes-etp",
-              "trading/buying-and-selling"
-            ]
-          },
-          "trading/liquidity-and-routes",
-          {
-            "group": "Trading & Access",
-            "pages": [
+              "trading/buying-and-selling",
+              "trading/liquidity-and-routes",
               "trading/nav-and-pricing",
               "trading/fees"
             ]
