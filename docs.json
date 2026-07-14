@@ -73,6 +73,15 @@
               "disclosures/privacy-policy"
             ]
           }
+        ],
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "welcome",
+              "eligibility"
+            ]
+          }
         ]
       }
     ]
