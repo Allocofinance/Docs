@@ -8,7 +8,7 @@
     "dark": "#0a0a0a"
   },
   "logo": {
-    "light": "https://media.brand.dev/83cda7a8-2052-4293-8e4f-a68a5e123b43.svg",
+    "light": "/images/logo.png",
     "dark": "https://media.brand.dev/83cda7a8-2052-4293-8e4f-a68a5e123b43.svg"
   },
   "favicon": "https://icons.duckduckgo.com/ip3/allocofi.com.ico",
