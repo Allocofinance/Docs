@@ -33,7 +33,7 @@
             ]
           },
           {
-            "group": "ETP Products",
+            "group": "On-chain ETPs",
             "pages": [
               "products/overview",
               "products/kol-etp",
