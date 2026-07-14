@@ -28,22 +28,22 @@ Alloco is onchain ETP issuance and access infrastructure. Every product on the p
 Every Alloco product is built on six core modules working together.
 
 <CardGroup cols={2}>
-  <Card title="Product Engine" icon="gear">
+  <Card title="Product Engine" icon="gear" href="/products/overview">
     Defines the product's name, ticker, objective, eligible users, fee schedule, minimum units, risk limits, rebalancing rules, and subscription/redemption cycles. The Product Engine is the rulebook that governs everything the product does.
   </Card>
-  <Card title="Vault / Share Token" icon="vault">
+  <Card title="Vault / Share Token" icon="vault" href="/trading/buying-and-selling">
     Records product shares and tracks subscription and redemption status onchain. Your share token represents your economic interest in the product's underlying fund. It is not an unconditional ownership claim or a guarantee of capital unless explicitly stated in the product documents.
   </Card>
-  <Card title="NAV Engine" icon="calculator">
+  <Card title="NAV Engine" icon="calculator" href="/trading/nav-and-pricing">
     Calculates Official NAV, iNAV, and Risk NAV by combining asset values, cash balances, liabilities, accrued fees, unsettled trades, and applicable haircuts. The NAV Engine is the source of truth for product valuation across all trading and settlement workflows.
   </Card>
-  <Card title="Liquidity Layer" icon="arrow-right-arrow-left">
+  <Card title="Liquidity Layer" icon="arrow-right-arrow-left" href="/trading/buying-and-selling">
     Routes your orders across DEX pools, RFQ market makers, authorised participants, broker APIs, and primary create/redeem flows depending on your order size, eligibility, and current market conditions.
   </Card>
-  <Card title="Legal Wrapper" icon="file-contract">
+  <Card title="Legal Wrapper" icon="file-contract" href="/disclosures/custody-overview">
     Each product uses an SPV, SPC, segregated portfolio, or equivalent legal structure to separate the product's assets, your economic rights, and the Alloco operating company's own assets. This separation is a key protection for users.
   </Card>
-  <Card title="Disclosure Layer" icon="book-open">
+  <Card title="Disclosure Layer" icon="book-open" href="/disclosures/risk-disclosures">
     Publishes the product's terms, fees, risks, NAV reports, holdings, custody information, rebalancing records, exception events, and all supporting documentation — so you always have the information you need to evaluate your position.
   </Card>
 </CardGroup>
