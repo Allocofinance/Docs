@@ -81,5 +81,8 @@
     "socials": {
       "website": "https://allocofi.com"
     }
+  },
+  "interaction": {
+    "drilldown": true
   }
 }
